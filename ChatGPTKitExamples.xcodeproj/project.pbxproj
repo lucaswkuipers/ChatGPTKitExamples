@@ -20,6 +20,7 @@
 		A05E88352A05528600709623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A05E88372A05528600709623 /* ChatGPTKitExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPTKitExamples.entitlements; sourceTree = "<group>"; };
 		A05E88392A05528600709623 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A05E88412A0552A200709623 /* ChatGPTKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ChatGPTKit; path = ../ChatGPTKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +37,7 @@
 		A05E88252A05528600709623 = {
 			isa = PBXGroup;
 			children = (
+				A05E88402A0552A200709623 /* Packages */,
 				A05E88302A05528600709623 /* ChatGPTKitExamples */,
 				A05E882F2A05528600709623 /* Products */,
 			);
@@ -67,6 +69,14 @@
 				A05E88392A05528600709623 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A05E88402A0552A200709623 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A05E88412A0552A200709623 /* ChatGPTKit */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

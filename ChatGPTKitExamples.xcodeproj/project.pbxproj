@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A050C1B82A05550D0030EA4F /* ChatGPTKit in Frameworks */ = {isa = PBXBuildFile; productRef = A050C1B72A05550D0030EA4F /* ChatGPTKit */; };
 		A05E88322A05528600709623 /* ChatGPTKitExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05E88312A05528600709623 /* ChatGPTKitExamplesApp.swift */; };
 		A05E88342A05528600709623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05E88332A05528600709623 /* ContentView.swift */; };
 		A05E88362A05528600709623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05E88352A05528600709623 /* Assets.xcassets */; };
@@ -14,13 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A050C1AF2A0554CE0030EA4F /* ChatGPTKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ChatGPTKit; path = ../ChatGPTKit; sourceTree = "<group>"; };
+		A050C1B02A0554E30030EA4F /* ChatGPTKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ChatGPTKit; path = ../ChatGPTKit; sourceTree = "<group>"; };
 		A05E882E2A05528600709623 /* ChatGPTKitExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTKitExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05E88312A05528600709623 /* ChatGPTKitExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTKitExamplesApp.swift; sourceTree = "<group>"; };
 		A05E88332A05528600709623 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A05E88352A05528600709623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A05E88372A05528600709623 /* ChatGPTKitExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPTKitExamples.entitlements; sourceTree = "<group>"; };
 		A05E88392A05528600709623 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A05E88412A0552A200709623 /* ChatGPTKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ChatGPTKit; path = ../ChatGPTKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,18 +30,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A050C1B82A05550D0030EA4F /* ChatGPTKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A050C1AE2A0554CE0030EA4F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A050C1AF2A0554CE0030EA4F /* ChatGPTKit */,
+				A050C1B02A0554E30030EA4F /* ChatGPTKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		A050C1B62A05550D0030EA4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A05E88252A05528600709623 = {
 			isa = PBXGroup;
 			children = (
-				A05E88402A0552A200709623 /* Packages */,
+				A050C1AE2A0554CE0030EA4F /* Packages */,
 				A05E88302A05528600709623 /* ChatGPTKitExamples */,
 				A05E882F2A05528600709623 /* Products */,
+				A050C1B62A05550D0030EA4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,14 +91,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A05E88402A0552A200709623 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				A05E88412A0552A200709623 /* ChatGPTKit */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,8 +105,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				A050C1BA2A05551A0030EA4F /* PBXTargetDependency */,
 			);
 			name = ChatGPTKitExamples;
+			packageProductDependencies = (
+				A050C1B72A05550D0030EA4F /* ChatGPTKit */,
+			);
 			productName = ChatGPTKitExamples;
 			productReference = A05E882E2A05528600709623 /* ChatGPTKitExamples.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +139,8 @@
 				Base,
 			);
 			mainGroup = A05E88252A05528600709623;
+			packageReferences = (
+			);
 			productRefGroup = A05E882F2A05528600709623 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,6 +173,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A050C1BA2A05551A0030EA4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A050C1B92A05551A0030EA4F /* ChatGPTKit */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A05E883B2A05528600709623 /* Debug */ = {
@@ -364,6 +389,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A050C1B72A05550D0030EA4F /* ChatGPTKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChatGPTKit;
+		};
+		A050C1B92A05551A0030EA4F /* ChatGPTKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChatGPTKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A05E88262A05528600709623 /* Project object */;
 }

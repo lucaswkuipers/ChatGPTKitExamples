@@ -1,9 +1,10 @@
 import SwiftUI
+import ChatGPTKit
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Hello, world!")
+            Text(ChatGPTKit().helloWorld)
         }
         .padding()
     }
